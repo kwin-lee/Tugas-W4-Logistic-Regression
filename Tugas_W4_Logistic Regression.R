@@ -1,7 +1,7 @@
 #Fungsi Regresi Logistik 
 #Metode Newton-Rhapson & IRLS
 
-logistic_regression <- function(X,y,method="NR",tol=1e-5,max.iter=1000){
+logistic_regression = function(X,y,method="NR",tol=1e-5,max.iter=1000){
   beta = rep(0,ncol(X))
   p = 1/(1+exp(-X%*%beta))
   
